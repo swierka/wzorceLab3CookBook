@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity implements RecipeView {
             @Override
             public void onClick(View v) {
                 presenter.onRefreshClicked(checkBox.isChecked());
-                showRecipes(presenter.getAllRecipes());
             }
         });
     }

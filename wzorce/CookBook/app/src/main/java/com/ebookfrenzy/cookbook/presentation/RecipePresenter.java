@@ -34,7 +34,9 @@ public class RecipePresenter {
         return allRecipes;
     }
 
-    public void onRefreshClicked(boolean meat) {
-        showRecipes(meat);
+    public void onRefreshClicked(boolean veggie) {
+        if(veggie){
+            showRecipes(false);
+        } else { showRecipes(true);}
     }
 }
